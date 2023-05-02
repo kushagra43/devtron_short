@@ -41,7 +41,7 @@ body {
 
 /* header */
 .header {
-    background-image: url(./Top_Mesh.png);
+    background-image: url(./top_mesh.png);
     background-repeat: no-repeat;
     background-size: cover;
     padding: 60px 40px;
