@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devtron</title>
+    <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+
+<body>
+    <!-- Nav Bar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <img src="/images/logo.svg" alt="devtron_logo" class="navLogo" />
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="header" id="first-fold" style="position: relative">
+        <img src="/images/triangle_background.png" alt=""
+            style="z-index: -10;filter: blur(150px); position: absolute;top: -250px; height: 1000px;left: -100px">
+
+        <div class="container">
+            <div class="header_flex_container">
+                <div class="header_text_container">
+                    <h1 class="header_heading">Deploy Apps on Kubernetes from Day 1!</h1>
+                    <p class="header_parah">Setting up deployment pipelines was never this fast, Devtron makes k8s
+                        adoption easy and helps you scale deployments seamlessly.
+                    </p>
+                    <form id="myForm" action="" method="">
+                        <div id="step1" style="display: flex" class="form_div">
+                            <input type="email" id="email" name="email" placeholder="Email Address">
+                            <button class="button" type="button" onclick="nextStep()">Next</button>
+                        </div>
+
+                        <div id="step2" style="display: none" class="form_div">
+                            <input type="text" id="name" name="name" placeholder="First Name">
+                            <!-- <button class="button" type="button" onclick="nextStep()">sUBMIT</button> -->
+                            <button class="button" type="button" onclick="nextStep()">Submit</button>
+                        </div>
+
+                        <!-- <div id="step3" style="display: none" class="form_div">
+                            <textarea id="custom-requirements" name="custom-requirements"
+                                placeholder="Custom Requirements" rows="3"></textarea>
+                            <button class="button" type="submit">Submit</button>
+                        </div> -->
+                    </form>
+                    <div class="step_cont">
+                        <p class="header_parah first">1</p>
+                        <div class="second"></div>
+                        <p class="header_parah second">2</p>
+                        <!-- <div class="third"></div>
+                        <p class="header_parah third">3</p> -->
+                    </div>
+                    <p class="header_parah error_handling">Some error occured</p>
+                </div>
+                <div class="flex_center" style="flex-direction: column;">
+                    <img src="/images/footer_image.png" alt="footer_image" class="footer_image">
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Companies Section -->
+    <section class="flex_center Companies_section">
+        <div class="container">
+            <h2 class="heading2 text_center">Trusted by</h2>
+            <div class="marque-container">
+                <div class="marque-grid-container">
+                    <div class="grid-8">
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image2.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image3.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image4.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image5.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image6.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image7.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image8.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image9.svg" alt="" />
+                        </div>
+                    </div>
+                    <div class="grid-8" id="marque_second_image_container">
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image2.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image3.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image4.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image5.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image6.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image7.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image8.svg" alt="" />
+                        </div>
+                        <div class="brands_grid_item">
+                            <img class="brands_img" src="/images/image9.svg" alt="" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="flex_center features flex-col">
+        <div class="container flex_center">
+            <div class="features_grid">
+                <div class="flex_center features_grid_div ">
+                    <img src="/images/image33.png" alt="">
+                    <p class="features_text">Productionize</br>k8s Quickly</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="/images/image34.png" alt="">
+                    <p class="features_text">Single Interface Build,</br>Deploy, Debug</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="/images/image35.png" alt="">
+                    <p class="features_text">DevOps</br>Efficiency</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="/images/image36.png" alt="">
+                    <p class="features_text">Optimize</br>Cost</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="/images/image37.png" alt="">
+                    <p class="features_text">Add features as</br>you Go</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="/images/image38.png" alt="">
+                    <p class="features_text">Migrate apps to</br>k8s easily</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="/images/image39.png" alt="">
+                    <p class="features_text">Application Health</br>Alerts</p>
+                </div>
+                <div class="flex_center features_grid_div ">
+                    <img src="/images/image40.png" alt="">
+                    <p class="features_text">Quick Response</br>Time</p>
+                </div>
+            </div>
+        </div>
+        <button class="button" onclick="scrollToSection()">Free Demo</button>
+    </section>
+</body>
+<script>
+    // Header form
+    var email;
+    var name;
+    function nextStep() {
+        var currentStep = document.querySelector('form > div[style*="display: flex"]');
+        var stepContainer = document.querySelector('.step_cont');
+
+        var nextStep = currentStep.nextElementSibling;
+        if (nextStep) {
+            if (stepContainer.classList.length == 1) {
+                var inputField = currentStep.querySelector('input');
+                var value = inputField.value;
+
+                if (value == "") {
+                    inputField.setCustomValidity('This field is required');
+                    inputField.reportValidity();
+                    return;
+                }
+
+                email = value;
+
+                var myHeaders = new Headers();
+                var requestOptions = {
+                    method: 'POST',
+                    headers: myHeaders,
+                    redirect: 'follow'
+                };
+                fetch("https://forms.hubspot.com/uploads/form/v2/6866519/6cb86d0f-1d72-49a4-805d-3ec2029a674f?email=" + email + "&firstname=" + "",
+                    requestOptions)
+                    .then(response => {
+                        if (!response.ok) {
+                            document.querySelector('form').style.display = "none";
+                            document.querySelector('.step_cont').style.display = "none";
+                            document.querySelector('.error_handling').style.display = "block";
+                            document.querySelector('.error_handling').innerHTML = "Please enter work email";
+                        }
+                        console.log("email=" + email + "&firstname=" + "");
+                        currentStep.style.display = 'none';
+                        nextStep.style.display = 'flex';
+
+                        stepContainer.classList.add('step_2');
+                    }).catch(error => {
+                        document.querySelector('form').style.display = "none";
+                        document.querySelector('.step_cont').style.display = "none";
+                        document.querySelector('.error_handling').style.display = "block";
+
+                        document.querySelector('.error_handling').innerHTML = "Opps! Something wrong has happened";
+                    });
+            }
+            else {
+                //         var inputField = currentStep.querySelector('input');
+                //         var value = inputField.value;
+
+                //         if (value == "") {
+                //             inputField.setCustomValidity('This field is required');
+                //             inputField.reportValidity();
+                //             return;
+                //         }
+
+                //         name = value;
+
+                //         fetch('https://forms.hubspot.com/uploads/form/v2/6866519/6cb86d0f-1d72-49a4-805d-3ec2029a674f', {
+                //             method: 'POST',
+                //             headers: {
+                //                 'Content-Type': 'application/json'
+                //             },
+                //             data: JSON.stringify({ email: email })
+                //         }).then(response => {
+                //             if (!response.ok) {
+                //                 throw new Error('Network response was not ok');
+                //             }
+                //             currentStep.style.display = 'none';
+                //             nextStep.style.display = 'flex';
+                //             stepContainer.classList.add('step_3');
+                //         }).catch(error => {
+                //             console.error('There was a problem with the fetch operation:', error);
+                //         });
+            }
+        } else {
+            event.preventDefault();
+            var inputField = currentStep.querySelector('input');
+            var value = inputField.value;
+
+            if (value == "") {
+                inputField.setCustomValidity('This field is required');
+                inputField.reportValidity();
+                return;
+            }
+
+            name = value;
+
+            var myHeaders = new Headers();
+            var requestOptions = {
+                method: 'POST',
+                headers: myHeaders,
+                redirect: 'follow'
+            };
+            fetch("https://forms.hubspot.com/uploads/form/v2/6866519/6cb86d0f-1d72-49a4-805d-3ec2029a674f?email=" + email + "&firstname=" + name,
+                requestOptions)
+                .then(response => {
+                    if (!response.ok) {
+                        document.querySelector('form').style.display = "none";
+                        document.querySelector('.step_cont').style.display = "none";
+                        document.querySelector('.error_handling').style.display = "block";
+
+                        document.querySelector('.error_handling').innerHTML = "Oops! Something went wrong, Please try again later.";
+                    }
+                    console.log("email=" + email + "&firstname=" + name);
+                    document.querySelector('form').style.display = "none";
+                    document.querySelector('.step_cont').style.display = "none";
+                    document.querySelector('.error_handling').style.display = "block";
+                    document.querySelector('.error_handling').innerHTML = "Thank You for submitting the Form!";
+                }).catch(error => {
+                    document.querySelector('form').style.display = "none";
+                    document.querySelector('.step_cont').style.display = "none";
+                    document.querySelector('.error_handling').style.display = "block";
+
+                    document.querySelector('.error_handling').innerHTML = "Oops! Something went wrong, Please try again later.";
+                });
+        }
+    }
+
+    // scroll to top
+    function scrollToSection() {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }
+</script>
+
+</html>
