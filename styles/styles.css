@@ -85,9 +85,14 @@ body {
     color: #989DAD;
 }
 
+.form-highlight-parah {
+    margin-top: 40px;
+    color: #CEBFFF;
+}
+
 .form_div {
     align-items: start;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .form_div input {
