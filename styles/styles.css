@@ -186,7 +186,8 @@ body {
 
 /* Companies Section */
 .Companies_section {
-    padding: 60px 40px;
+    padding: 0px 40px;
+    padding-top: 60px;
     flex-direction: column;
 }
 
@@ -233,7 +234,7 @@ body {
 
 /* features grid */
 .features {
-    padding: 60px 40px;
+    padding: 40px 40px;
 }
 
 .features_grid {
@@ -255,6 +256,8 @@ body {
     line-height: 150%;
     text-align: center;
     color: #989DAD;
+    padding-top: 13px;
+
 }
 
 /* extra classes */
